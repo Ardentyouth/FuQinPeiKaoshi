@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:hint="手机号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:hint="确定手机号"
+        android:id="@+id/ed_phone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账户余额："
+        android:id="@+id/tv_name1"
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择兑换内容"
+        ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="兑换手续费2元"
+            android:layout_marginRight="30dp"
+            ></TextView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:id="@+id/btn_no"
+                ></Button>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="确定兑换"
+                android:id="@+id/btn_ys"
+                android:layout_weight="1"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
